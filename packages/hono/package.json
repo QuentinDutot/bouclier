@@ -1,7 +1,7 @@
 {
   "name": "@bouclier/hono",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "homepage": "https://bouclier.dev",
   "repository": {
@@ -10,13 +10,13 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": ["dist", "package.json"],
   "scripts": {
     "test": "bun test",
     "build": "bunx tsup src/index.ts --format esm --dts --clean"
   },
   "dependencies": {
-    "@bouclier/core": "workspace:*"
+    "@bouclier/core": "^0.0.0"
   },
   "devDependencies": {
     "tsup": "^8.0.2"
