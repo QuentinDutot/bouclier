@@ -1,0 +1,23 @@
+{
+  "name": "bouclier-javascript",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://bouclier.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bouclier-dev/bouclier-javascript.git"
+  },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "bun --filter './packages/*' test",
+    "build": "bun --filter './packages/*' build",
+    "lint": "bunx biome check .",
+    "format": "bunx biome format . --write",
+    "check": "bunx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@types/bun": "^1.1.3",
+    "typescript": "^5.4.4"
+  }
+}

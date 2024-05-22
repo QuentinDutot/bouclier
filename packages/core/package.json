@@ -1,0 +1,19 @@
+{
+  "name": "@bouclier/core",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "test": "bun test",
+    "build": "bunx tsup src/index.ts --format esm --dts --clean"
+  },
+  "dependencies": {
+    "request-ip": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/request-ip": "^0.0.41",
+    "tsup": "^8.0.2"
+  }
+}
