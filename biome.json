@@ -12,14 +12,9 @@
     "enabled": true,
     "rules": {
       "all": true,
-      "complexity": {
-        "noForEach": "off"
-      },
       "style": {
         "useBlockStatements": "off",
-        "noDefaultExport": "off",
-        "useNamingConvention": "off",
-        "noImplicitBoolean": "off"
+        "noDefaultExport": "off"
       }
     }
   },
