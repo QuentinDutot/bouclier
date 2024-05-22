@@ -1,5 +1,5 @@
 {
-  "name": "bouclier-javascript",
+  "name": "@bouclier/bouclier",
   "type": "module",
   "license": "MIT",
   "homepage": "https://bouclier.dev",

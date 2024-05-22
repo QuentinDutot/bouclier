@@ -6,8 +6,11 @@ const bouclier = () => {
   const memoryBan = new MemoryBanManager()
 
   return createMiddleware(async (context, next) => {
-    // @ts-expect-error
-    const ip = getClientIp(context.req)
+    const request: Parameters<typeof getClientIp>[0] = {
+      headers: context.req.raw.headers.toJSON(),
+    }
+
+    const ip = getClientIp(request)
     if (!ip) {
       consoleLog.error('could not get the client ip from the request - middleware skipped')
       await next()
