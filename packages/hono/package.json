@@ -2,6 +2,12 @@
   "name": "@bouclier/hono",
   "type": "module",
   "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://bouclier.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bouclier-dev/bouclier-javascript.git"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": ["dist"],
